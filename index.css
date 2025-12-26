@@ -87,6 +87,14 @@ header {
     letter-spacing: -0.02em;
 }
 
+.brand-sub {
+    display: block;
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
+
 .logo-dot {
     width: 14px;
     height: 14px;
