@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="register.css">
+    <title>Register · CRT Atlas</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="auth-page">
+        <div class="auth-shell fade">
+            <div class="auth-header">
+                <div class="auth-brand">
+                    <span class="logo-dot"></span>
+                    <span>CRT Atlas</span>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
+            </div>
 
-    <div class="container">
-        <h2>Create Account</h2>
-        <div id="errorMsg" class="error"></div>
+            <div class="auth-card">
+                <h2>Create your account</h2>
+                <p class="auth-subtitle">Join the journey with a fresh profile.</p>
+                <div id="errorMsg" class="error"></div>
 
-        <label>Full Name</label>
-        <input type="text" id="fullname" placeholder="Enter full name" />
+                <div class="field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter full name" autocomplete="name" />
+                </div>
 
-        <label>Username</label>
-        <input type="text" id="username" placeholder="Enter username" />
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Pick a username" autocomplete="username" />
+                </div>
 
-        <label>Email</label>
-        <input type="email" id="email" placeholder="Enter email" />
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email" autocomplete="email" />
+                </div>
 
-        <label>Gender</label>
-        <select id="gender">
-            <option value="">Select gender</option>
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-            <option value="Other">Other</option>
-        </select>
+                <div class="field">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="">Select gender</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
 
-        <label>Password</label>
-        <input type="password" id="password" placeholder="Enter password" />
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" autocomplete="new-password" />
+                </div>
 
-        <label>Repeat Password</label>
-        <input type="password" id="repeatPassword" placeholder="Repeat password" />
+                <div class="field">
+                    <label for="repeatPassword">Repeat Password</label>
+                    <input type="password" id="repeatPassword" placeholder="Repeat password" autocomplete="new-password" />
+                </div>
 
-        <button onclick="register()">Register</button>
+                <button class="cta" onclick="register()">Register</button>
 
-        <div class="link-btn">
-            Already have an account? <a href="login.html">Login</a>
+                <div class="auth-actions">
+                    <a class="ghost-link" href="login.html">Already have an account?</a>
+                    <span class="small-note">Passwords must match to proceed.</span>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <script src="register.js">
-      
-    </script>
-
+    <script src="theme.js"></script>
+    <script src="index.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>

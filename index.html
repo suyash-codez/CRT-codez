@@ -7,69 +7,126 @@
    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="page-shell">
+        <header>
+            <div class="brand">
+                <span class="logo-dot"></span>
+                <div>
+                    <div>CRT Atlas</div>
+                    <small style="color: var(--muted); font-weight:600;">Showcase</small>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="forgetpass.html">Reset</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">Toggle</button>
+            </nav>
+        </header>
 
-<header>
-    <h1>My CRT Project</h1>
-    <nav>
-        <a href="register.html">Register</a>
-        <a href="login.html">Login</a>
-        <a href="forgetpass.html">Forgot Password</a>
-    </nav>
-</header>
+        <main>
+            <section class="hero fade">
+                <div class="hero-copy">
+                    <div class="badge">
+                        <span class="logo-dot" style="box-shadow:none;"></span>
+                        CRT Learning Path
+                    </div>
+                    <h1>Modern UI kit for your CRT playbook</h1>
+                    <p>Experience a cohesive set of pages—landing, register, login, and reset—built with glassmorphism, soft gradients, and a polished dark/light mode.</p>
+                    <div class="actions">
+                        <a href="register.html" class="btn btn-primary">Get Started</a>
+                        <a href="login.html" class="btn btn-ghost">Return User</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-card">
+                        <div class="pill">UI System · Responsive</div>
+                        <div class="stat-grid">
+                            <div class="stat">
+                                <h3>3 Auth Pages</h3>
+                                <p>Register, Login, Reset</p>
+                            </div>
+                            <div class="stat">
+                                <h3>Dual Theme</h3>
+                                <p>Dark / Light with one toggle</p>
+                            </div>
+                            <div class="stat">
+                                <h3>Modern Fonts</h3>
+                                <p>Space Grotesk · Manrope</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<section class="hero fade">
-    <h2>Welcome to My CRT Learning Showcase 🚀</h2>
-    <p>This project represents everything I explored and learned during my CRT (Campus Recruitment Training). From HTML, CSS, JavaScript basics to creating a clean UI/UX — each page here shows my progress!</p>
-    <a href="register.html" class="btn">Start Exploring</a>
-</section>
+            <section class="section fade">
+                <div class="section-head">
+                    <p class="eyebrow">Pages</p>
+                    <h2>Explore the suite</h2>
+                    <p>Navigate through the refined screens to feel the consistent interaction patterns.</p>
+                </div>
+                <div class="grid">
+                    <div class="card" onclick="location.href='register.html'">
+                        <h3>Register Page</h3>
+                        <p>Create a profile with guided fields and instant feedback.</p>
+                        <div class="learn-tags">
+                            <span class="tag">Validation</span>
+                            <span class="tag">Guided form</span>
+                        </div>
+                    </div>
+                    <div class="card" onclick="location.href='login.html'">
+                        <h3>Login Page</h3>
+                        <p>Minimal yet bold login with helpful states and shortcuts.</p>
+                        <div class="learn-tags">
+                            <span class="tag">Form states</span>
+                            <span class="tag">Accessible</span>
+                        </div>
+                    </div>
+                    <div class="card" onclick="location.href='forgetpass.html'">
+                        <h3>Reset Password</h3>
+                        <p>Send a reset link inside a clean, reassuring screen.</p>
+                        <div class="learn-tags">
+                            <span class="tag">Error states</span>
+                            <span class="tag">CTA clarity</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<section class="section fade">
-    <h2>Pages Included</h2>
-    <div class="grid">
-        <div class="card" onclick="location.href='register.html'">
-            <h3>Register Page</h3>
-            <p>A clean user registration form with validation and smooth UI.</p>
-        </div>
-        <div class="card" onclick="location.href='login.html'">
-            <h3>Login Page</h3>
-            <p>Simple & modern login UI with improved UX.</p>
-        </div>
-        <div class="card" onclick="location.href='forgetpass.html'">
-            <h3>Forgot Password</h3>
-            <p>Reset password page with user-friendly feedback.</p>
-        </div>
+            <section class="section fade">
+                <div class="section-head">
+                    <p class="eyebrow">Highlights</p>
+                    <h2>What I built & learned</h2>
+                    <p>Front-end craft from semantic HTML to delightful motion.</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Semantic & Accessible</h3>
+                        <p>Landmarks, focus styles, and responsive layouts.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Modern Visual Language</h3>
+                        <p>Glass panels, accent glows, and purposeful typography.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Theme Engine</h3>
+                        <p>System-aware dark/light with stored preferences.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Micro-interactions</h3>
+                        <p>Scroll reveals, hover lifts, and tactile buttons.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with hard work, curiosity & lots of practice ✨ · Toggle the theme and enjoy the vibes.</p>
+        </footer>
     </div>
-</section>
 
-<section class="section fade">
-    <h2>What I Learned</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>✔ HTML Structure</h3>
-            <p>Building semantic and accessible pages.</p>
-        </div>
-        <div class="card">
-            <h3>✔ CSS Styling</h3>
-            <p>Creating modern UI without gradients, using shadows & spacing.</p>
-        </div>
-        <div class="card">
-            <h3>✔ JavaScript Basics</h3>
-            <p>Form validation, DOM events & interactions.</p>
-        </div>
-        <div class="card">
-            <h3>✔ UI/UX Thinking</h3>
-            <p>Micro-interactions, consistency & neat layout.</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>Made with hard work, curiosity & lots of practice ✨</p>
-</footer>
-
-<script src="index.js">
-   
-</script>
-
+    <script src="theme.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

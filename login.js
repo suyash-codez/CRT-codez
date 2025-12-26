@@ -3,10 +3,12 @@ function login() {
     const password = document.getElementById("password").value;
     const errorMsg = document.getElementById("errorMsg");
 
+    errorMsg.classList.remove("show");
     errorMsg.innerText = "";
 
     if (!email || !password) {
         errorMsg.innerText = "Please fill all fields.";
+        errorMsg.classList.add("show");
         return;
     }
 
